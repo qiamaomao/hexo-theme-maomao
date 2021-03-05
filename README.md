@@ -27,7 +27,6 @@ links:
     img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/QQ22915519023113713520210301004916.svg
     descr: 猫猫的快乐小站
 ```
-
 ### search
 ```
 npm install hexo-generator-searchdb
