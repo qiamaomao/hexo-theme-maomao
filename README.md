@@ -29,9 +29,10 @@ links:
 ```
 
 ### search
-
 You can configure this plugin in your root _config.yml. All the arguments are optional.
-
+```
+npm install hexo-generator-searchdb
+```
 ```
 search:
   path: search.xml
