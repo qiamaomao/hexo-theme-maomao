@@ -1,4 +1,4 @@
-## maomao Themes
+## maomao&hexo主题
 
 不要吐槽猫猫的代码，那会让我很伤心。
 <br>
