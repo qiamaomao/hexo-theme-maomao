@@ -25,5 +25,4 @@ function postFolding(args, content) {
 
 
 }
-
 hexo.extend.tag.register('folding', postFolding, {ends: true});
