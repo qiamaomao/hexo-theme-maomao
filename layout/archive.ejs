@@ -1,0 +1,30 @@
+<article class="page-main shadow-1 mt-20 p-30">
+                <% var lastDate; %>
+                <% site.posts.sort('date', theme.home_page_sort).each(function(post, i){ %>
+                <% var currentDate = parseInt(date(post.date, 'YYYYMM')); %>
+                <% if (lastDate != currentDate){ %>
+                <% lastDate = currentDate; %>
+                <div class="archives-item p-20">
+                    <h2 class="mb-20"><i data-feather="feather" style="width:21px;height:21px"></i> <%= date(post.date, 'YYYY') %>年<%= date(post.date, 'MM') %>月</h2>
+                    <ul class="archives_list">
+                        <% } %>
+                        <li>
+                                <span class="sm-dn" style=" float: right"> , <%- date(post.date,"YYYY年M月DD日") %></span> 
+                                <span class="sm-dn" style=" float: right">
+                            <% if (post.categories && post.categories.length){ %>
+                                <%- list_categories(post.categories, {
+                                  show_count: false,
+                                  style: 'none',
+                                  separator: ',',
+                                  depth: 1
+                                }) %>
+                            <% } %>
+                        </span>
+                            <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+                        </li>
+                        <% if (!site.posts.sort('date', theme.home_page_sort).eq(i + 1) || currentDate != parseInt(date(site.posts.sort('date', theme.home_page_sort).eq(i + 1).date, 'YYYYMM'))){ %>
+                    </ul>
+                </div>
+                <% } %>
+                <% }) %>
+</article>

@@ -1,0 +1,55 @@
+# 大菜单
+menu:
+  主页: { path: /, ico: home }
+  说说: { path: /ssn.html, ico: coffee }
+  归档: { path: /archives/, ico: hard-drive }
+  友站: { path: /links.html, ico: link-2 }
+  关于: { path: /about/, ico: feather }
+# 小菜单
+mmenu:
+  主页: /
+  说说: /ssn.html
+  友站: /links.html
+
+
+底部描述: 时间带走了我为数不多的快乐
+
+# 懒加载占位
+lazy: data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+# 首页幻灯片
+swiper:
+  1: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/下载.webp
+  2: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/下载.webp
+  3: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/下载.webp
+
+# 头像
+avatar: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/QQ22915519023113713520210301004916.svg
+# 头像背景
+avatarbg: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/bg10-2.svg
+# 简介
+简介: I am the luckiest person in the world
+
+# 侧边栏
+第一张图: https://p.pstatp.com/origin/1386c000498ce2e79f870
+第二张图: https://p.pstatp.com/origin/138c600010820605430aa
+# 归档排序
+home_page_sort: -1
+
+# twikoo评论
+envId: blog-3gae6e3l4550a1f8
+
+# 底部菜单
+footer_nav:
+  主页: { path: /, img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/ii/MBE风格多色图标-发送.svg }
+  日常: { path: /mao.html, img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/ii/MBE风格多色图标-喜欢.svg }
+  归档: { path: /archives/, img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/ii/MBE风格多色图标-文件夹.svg }
+  关于: { path: /about/, img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/ii/MBE风格多色图标-指南针.svg }
+
+
+# 友情链接
+links: 
+  绒布球: 
+    url: https://rongbuqiu.com/
+    img: https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/QQ22915519023113713520210301004916.svg
+    descr: 猫猫的快乐小站

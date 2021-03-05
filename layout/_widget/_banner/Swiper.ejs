@@ -1,0 +1,34 @@
+  <!-- Swiper -->
+  <div class="swiper-container mt-20 br-10" style="position: relative">
+      <div class="adTag sm-dn"><i data-feather="target"></i></div>
+  <div class="swiper-wrapper br-10">
+          <% for (name in theme.swiper) { %>
+              <div class="lazyload swiper-slide br-10" style="background-image:url(<%= theme.lazy %>)" data-src="<%- url_for(theme.swiper[name]) %>"></div>
+          <% } %> 
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+<style>.swiper-wrapper *{border-radius: 10px;}</style>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      spaceBetween: 20,
+    },
+    spaceBetween: 30,
+    initialSlide :1,
+    effect: 'slide',
+    autoplay: true,
+    loop: true,
+  });
+</script>
+    <!-- 暂时不用了
+  <div class="swiper-pagination"></div>
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      spaceBetween: 20,
+    },
+       -->

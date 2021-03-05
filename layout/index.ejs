@@ -1,0 +1,5 @@
+<article class="item-main mt-20">
+<% page.posts.each(function(post){ %>
+<%- partial('_partial/_post/item-list', {post: post}) %>
+<% }) %>
+</article>

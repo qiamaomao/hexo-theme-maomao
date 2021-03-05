@@ -1,0 +1,30 @@
+<article class="page-main shadow-1 mt-20 p-30">
+    <div class="items">
+        <% if (theme.links) { %>
+            <% for (var i in theme.links) { %>
+                <div class="item a-shadow">
+                    <div class="link-avatar">
+                        <a href="<%= theme.links[i].url %>" target="_blank">
+                            <img class="lazyload" alt="<%= i %>" src="<%= theme.lazy %>" data-src="<%= theme.links[i].img %>">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h3 class="name">
+                            <a href="<%= theme.links[i].url %>" target="_blank">
+                                <%= i %>
+                            </a>
+                        </h3>
+                        <div class="meta button">
+                            <a href="<%= theme.links[i].url %>" target="_blank">
+                                <%= theme.links[i].url %>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <%- theme.links[i].descr %>
+                    </div>
+                </div>
+                <% } %>
+                    <% } %>
+    </div>
+</article>

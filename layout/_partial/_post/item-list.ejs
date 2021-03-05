@@ -1,0 +1,59 @@
+<article class="item mao shadow-item br-10">
+    <div class="mao-cover">
+        <a href="<%- url_for(post.path) %>">
+            <img class="lazyload brt-5" alt="<%= post.title %>" src="<%= theme.lazy %>" data-src="<%= post.cover %>"  width="280" height="180">
+        </a>
+            <% if (post.ico){ %>
+            <div class="entyr-icon ico-p"><i data-feather="<%= post.ico %>"></i></div>
+            <% } else if (post.video === 'bv'){ %>
+            <div class="entyr-icon ico-p"><i data-feather="tv" style="width:17px;height:16px"></i></div>
+            <% } else { %>
+            <% } %>
+    </div>
+    <div class="item-mao brb-5 bg" style="padding: 10px 10px 10px 13px">
+        <h2 class="item-title">
+            <a href="<%- url_for(post.path) %>">
+                <%= post.title %>
+            </a>
+        </h2>
+        <div class="item-excerpt mt-10">
+                <%- post.excerpt %>
+        </div>
+        <div class="item-meta sm-dn mt-5">
+            <span class="a-shadow">
+                    <i data-feather="box"></i>
+                    <% if (post.categories && post.categories.length){ %>
+                        <%- list_categories(post.categories, {
+                          show_count: false,
+                          style: 'none',
+                          separator: ',',
+                          depth: 1
+                        }) %>
+                    <% } %>
+            </span>
+            <span class="a-shadow">
+                <i data-feather="book-open"></i> <%= wordcount(post.content) %> 文字
+            </span>
+            <span class="a-shadow">
+                <i data-feather="eye"></i> <%= min2read(post.content) %> 阅时
+            </span>
+        </div>
+
+<div class="mao-footer">
+    <a class="mao-list-avatar" href="/about/">
+        <span>
+            <img class="lazyload avatar" alt="<%= config.author %>" src="<%= theme.lazy %>" data-src="<%= theme.avatar %>"  width="15" height="15">
+        </span>
+        <span>
+            <%= config.author %>
+        </span>
+    </a>
+    <span>
+        <time class="lately time" datetime="<%- date(post.date, "YYYY-MM-DD HH:mm:ss") %>" style="float: right">
+                <%- date(post.date, "YYYY-MM-DD HH:mm:ss") %>
+        </time>
+    </span>
+</div>
+
+    </div>
+</article>

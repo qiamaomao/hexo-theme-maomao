@@ -1,0 +1,48 @@
+<%- partial('_partial/_header/head') %>
+<%- partial('_partial/_header/header') %>
+<body>
+
+
+<% if (is_current('/index')){ %>
+    <div class="container">
+        <%- partial('_widget/_banner/Swiper') %>
+    </div>
+<% } %>
+
+<% if (page.banner){ %>
+<%- partial('_widget/_banner/post-Swiper') %>
+<% } %>
+
+<% if (page.abanner){ %>
+<div class="container">
+    <%- partial('_widget/_banner/a-post-Swiper') %>
+</div>
+<% } %>
+    
+<div class="container cat">
+<%- body %>
+<% if (is_home()){ %>
+<% } else if (is_category()){ %>
+<% } else if (is_tag()){ %>
+<% } else if (is_current('/mao')){ %>
+<% } else { %>
+<aside class="sidebar mt-20 sm-dn">
+<%- partial('_widget/aide') %>
+</aside>
+<% } %>
+
+</div>
+
+<% if (is_home()){ %>
+<div class="container">
+        <% if (page.total > 1){ %>
+            <nav class="page_number">
+                <%- paginator({ prev_text: '«', next_text: '»'}) %>
+            </nav>
+        <% } %>
+</div>
+<% } %>
+
+<%- partial('_partial/footer') %>
+</body>
+</html>

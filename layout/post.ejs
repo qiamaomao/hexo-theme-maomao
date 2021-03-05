@@ -1,0 +1,12 @@
+<article class="page-main shadow-1 br-5 mt-20 p-30">
+<% if (page.video === 'bv'){ %>
+<%- partial('_widget/_video/bv-video') %>
+<% } else { %>
+<%- partial('_partial/_post/post-metn') %>
+<% } %>
+<div class="post-content">
+ <%- page.content %>
+</div>
+<%- partial('_partial/_post/copyright') %>
+<%- partial('_widget/twikoo') %>
+</article>

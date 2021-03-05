@@ -1,0 +1,30 @@
+<div class="bt"><div id="tcomment"> </div></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.2.0/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: '<%= theme.envId %>',
+  el: '#tcomment',
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+  // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+})
+</script>
+<style type="text/css">
+#twikoo{margin:2rem 0 0 0}
+.twikoo .el-input__inner,.twikoo .el-textarea__inner{color: currentColor; background-color: #ffffff; border-color: #ffffff; box-shadow: 0 0 5px 0 #f5f7fc;}
+.twikoo .el-input-group__append,.twikoo .el-input-group__prepend{background-color: #ffffff; border-color: #ffffff; box-shadow: 0 0 5px 0 #f5f7fc;}
+.tk-footer{display:none}
+span.tk-comments-count{display:none}
+.tk-avatar.tk-has-avatar{box-shadow:2px 2px 3px #e1e1e1;border-radius:20%}
+.el-button+.el-button{box-shadow: 0 0 5px 0 #f5f7fc;border-radius: 30px;background-color:#fff!important;color:#6c6c6c!important}
+.el-button{border-radius: 30px;border:0px solid #DCDFE6!important}
+.tk-comments-no span{background:url(https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/暂无评论.svg);width:450px;height:230px;margin:0 0 -20px;background-repeat:no-repeat;background-size:cover;background-position:center;color:rgb(255 255 255 / 0%)}
+.tk-comments-container{padding:0 0 30px 0}
+.tk-action-icon svg{fill:#817fb3!important}
+.tk-action-link{color:#d7ceff!important}
+.tk-row.actions{margin-left:0rem!important}
+.el-textarea__inner{border-radius:20px}.el-input-group__prepend{border-radius:20px 0 0 20px}.el-input-group--prepend .el-input__inner,.el-input-group__append{border-radius:0 20px 20px 0}
+.el-button--mini, .el-button--small {
+    font-family: 'web'!important;
+    font-size: 13px!important;
+}
+</style>

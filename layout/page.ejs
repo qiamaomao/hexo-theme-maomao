@@ -1,0 +1,26 @@
+<article class="page-main p-30 shadow-1 br-10 mt-20">
+
+    <div class="meta">
+        <h1>
+                <%- page.title %>
+        </h1>
+        <div class="post_date_meta mt-10">
+                <span>
+                        <i data-feather="feather"></i> <%= config.author %>
+                    </span>
+                    <span class="sm-dn">
+                        <i data-feather="book-open"></i> <%= wordcount(page.content) %> 字
+                    </span>
+                    <span class="sm-dn">
+                        <i data-feather="eye"></i> <%= min2read(page.content) %> 分
+                    </span>
+                    <time itemprop="datePublished" datetime="<%- date(page.date, "YYYY-MM-DD") %>" style="padding: 0px 5px;float: right; margin-right: 0">
+                         <i data-feather="clock"></i> <%- date(page.date, "YYYY年MM月DD日") %>
+                    </time>
+                </div>
+            </div>
+    <div class="post-content">
+     <%- page.content %>
+    </div>
+    <%- partial('_widget/twikoo') %>
+    </article>

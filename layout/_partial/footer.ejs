@@ -1,0 +1,28 @@
+<footer class="footer mt-20">
+        <div class="container">
+            <div class="copyright">
+                <a href="<%= config.url %>">
+                    Copyright By <%= config.title %>
+                </a>
+            </div>
+            <div class="description sm-dn">
+                <%= theme.底部描述 %>
+            </div>
+        </div>
+    </footer>
+    <%- partial('_widget/m_nav') %>
+    <div class="go-top shadow">
+<i data-feather="arrow-up"></i>
+    </div>
+<% if (page.swiper){ %>
+  <script>
+    var swiper = new Swiper('.swiper-container.mm', {
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: true,
+      loop: true,
+    });
+  </script>
+<% } %>
+<script type="text/javascript">lazyload();feather.replace()</script>
+<script src="/js/app.js"></script>

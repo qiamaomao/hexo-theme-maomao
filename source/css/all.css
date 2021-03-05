@@ -1,0 +1,109 @@
+html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font:14px/24px 微软雅黑}
+body{color:#333;line-height:1.5}
+a{-webkit-tap-highlight-color:transparent}
+*,:after,:before{box-sizing:border-box}
+::-webkit-scrollbar{width:8px;height:6px}
+::-webkit-scrollbar-thumb{height:50px;outline-offset:-2px;border-radius:10px;background-color:#dfe7fe;background-image:linear-gradient(45deg,#edf3fe 33%,transparent 0,transparent 66%,#f2f6fd 0,#f2f6fd 100%,transparent 0,transparent)}
+*{margin:0;padding:0;color:#323232;list-style:none}
+.checkbox,.cursor-pointer,.go-top,.jg-entry,.swiper-btn-next,.swiper-btn-prev,.swiper-button-prev.swiper-button-white,.swiper-slide,.tab a,a,button,input,select,summary,textarea,transition{cursor:url(https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/S2.cur),auto}
+body,input[disabled],input[readonly],select[disabled],select[readonly],textarea[disabled]{cursor:url(https://cdn.jsdelivr.net/gh/qiamaomao/rbq-source/S1.cur),auto}
+body{background:#fff}
+a{color:#323232;text-decoration:none}
+a.extend.next,a.extend.prev,a.page-number,span.category-list-count,span.page-number.current{box-shadow:0 1px 2px rgb(0 0 0/5%)}
+.mao-footer{border-top:1px solid #fbfbfc}
+.lazyload{transition:all .5s}
+img{height:auto;max-width:100%;object-fit:cover}
+.shadow-1,.shadow-item{box-shadow:0 0 10px 0 #f3f6fe}
+.shadow{box-shadow:0 0 5px 0 #f5f7fc}
+.br-5{border-radius:5px}
+.br-10{border-radius:10px}
+.brt-5{border-radius:10px 10px 0 0}
+.brb-5{border-radius:0 0 10px 10px}
+.br-20{border-radius:20px}
+.br-30{border-radius:30px}
+.mb-30{margin-bottom:30px}
+.mb-20{margin-bottom:20px}
+.mb-15{margin-bottom:15px}
+.mb-10{margin-bottom:10px}
+.mb-5{margin-bottom:5px}
+.mt-5{margin-top:5px}
+.mt-10{margin-top:10px}
+.mt-15{margin-top:15px}
+.mt-20{margin-top:20px!important}
+.mt-30{margin-top:30px}
+.p-30{padding:30px}
+.p-20{padding:20px}
+.p-15{padding:15px}
+.p-10{padding:10px}
+.bg{background-color:#fff}
+.bb{border-bottom:1px solid rgb(238 234 255/22%)}
+.bt{border-top:1px solid rgb(238 234 255/22%)}
+.feather{width:16px;height:16px;vertical-align:-2px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.adTag{position:absolute;top:15px;right:15px;z-index:100;padding:10px;border-radius:50%;background-color:#fff;box-shadow:0 1px 2px rgb(0 0 0/5%);line-height:1}
+.entyr-icon.ico-p {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+}
+@media (max-width:768px){
+    .sm-dn{display:none}
+    .meta h1{font-size:21px}
+    h2.item-title{height:22px;-webkit-line-clamp:1}
+    .logo-a img{margin-top:-13px;height:30px}
+    section.header{height:61px}
+    .icolog{margin:15px auto}
+    article.item-main{grid-template-columns:1fr 1fr;grid-gap:12.5px;gap:12.5px}
+    .container{margin:auto 12.5px}
+    .swiper-container{height:174px!important}
+    .mao-cover,.mao-cover img{height:125px}
+    .page-main{margin-top:10px!important;width:100%}
+    .p-30{padding:15px 5px}
+    footer.footer{margin-bottom:50px;padding:22px 0}
+    .go-top{bottom:70px}
+    .single_video{width:100%;height:220px}
+    .post_date_meta span{margin-right:0}
+    .mao-footer{border-top:1px solid #fff}
+    .shadow-1 {box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);}
+}
+
+@media (max-width: 1200px){
+    .xcd {
+        display: none;
+    }
+    }
+
+@media (min-width:768px){
+    article.item-main{grid-template-columns:1fr 1fr 1fr;grid-gap:1.4rem;gap:1.4rem}
+    .footer_nav{display:none}    
+    .a-shadow{box-shadow:0 1px 2px rgb(0 0 0/3%)}
+    ul#pecd {
+        display: none!important;
+    }
+}
+
+@media (min-width: 768px){
+.container {
+        width: 789px;margin: 0 auto !important;
+    }
+}
+    
+@media (min-width: 992px){
+.container {
+        width: 1000px;margin: 0 auto !important;
+    }
+    article.item-main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+    
+@media (min-width: 1200px){
+.container {
+        width: 1170px;margin: 0 auto !important;
+    }
+}

@@ -1,0 +1,31 @@
+<% if (page.mbanner){ %>
+<%- partial('_widget/_banner/m-post-Swiper') %>
+<% } %>
+<div class="meta">
+<h1>
+<%- page.title %>
+</h1>
+<div class="post_date_meta mt-10">
+        <span><i data-feather="feather"></i> <%= config.author %></span>
+            <span>
+                    <i data-feather="box"></i>
+                    <% if (page.categories && page.categories.length){ %>
+                        <%- list_categories(page.categories, {
+                          show_count: false,
+                          style: 'none',
+                          separator: ',',
+                          depth: 1
+                        }) %>
+                    <% } %> 
+            </span>
+            <span class="sm-dn">
+                <i data-feather="book-open"></i> <%= wordcount(page.content) %> 字
+            </span>
+            <span class="sm-dn">
+                <i data-feather="eye"></i> <%= min2read(page.content) %> 分
+            </span>
+            <time itemprop="datePublished" datetime="<%- date(page.date, "YYYY-MM-DD HH:mm:ss") %>" style="padding: 0px 5px;float: right; margin-right: 0">
+                 <i data-feather="clock"></i> <timee class="lately"><%- date(page.date, "YYYY-MM-DD HH:mm:ss") %></timee>
+            </time>
+        </div>
+    </div>

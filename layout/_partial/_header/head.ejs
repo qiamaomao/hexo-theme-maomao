@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head><%var title = page.title;if (is_archive()){title = __('文章归档');if (is_month()){title += ': ' + page.year + '/' + page.month;} else if (is_year()){title += ': ' + page.year;}} else if (is_category()){title = __('分类') + ': ' + page.category;} else if (is_tag()){title = __('标签') + ': ' + page.tag;}%>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="<% if (page.tags && page.tags.length){ page.tags.forEach(function(tag, i){%> <%=tag.name%> <% if (i+1<page.tags.length){%>,<%} })}%><%= config.title %>">
+    <meta name="description" content="<% if (page.description){ %><%= page.description %> | <% } %><%= config.description %>">
+    <title><% if (title){ %><%= title %>・<% } %><%= config.title %></title>
+	<link rel="shortcut icon" href="https://p.pstatp.com/origin/ff830003a18df218a672"	title="Favicon">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//p.pstatp.com">
+    <%- css_auto_version('style') %>
+    <%- css_auto_version('css/all') %>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/6.4.15/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://cdn.staticfile.org/feather-icons/4.28.0/feather.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+    <script src="https://cdn.staticfile.org/Swiper/6.4.15/swiper-bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Tokinx/ViewImage@master/view-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Tokinx/Lately@master/lately.min.js"></script>
+  </head>
+<script>
+  $(window).on('load', function () {
+    $('.preloader').fadeOut(1000);
+  });
+</script>
+<div class="preloader">
+    <div class="preload-img">
+        <div class="spinnerBounce">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>

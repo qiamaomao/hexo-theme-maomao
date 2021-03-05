@@ -1,0 +1,21 @@
+div.timenode{position:relative}
+div.timenode:after,div.timenode:before{position:absolute;left:7px;z-index:1;width:2px;background:#ebeef7;content:""}
+div.timenode:before{top:0;height:6px}
+div.timenode:after{top:26px;height:calc(100% - 26px)}
+div.timenode:last-child:after{height:calc(100% - 42px);border-bottom-right-radius:2px;border-bottom-left-radius:2px}
+div.timenode .body,div.timenode .meta{max-width:calc(100% - 24px)}
+div.timenode .meta{position:relative;height:32px;color:#888;font-size:.875rem;line-height:32px}
+div.timenode .meta:after,div.timenode .meta:before{position:absolute;top:8px;z-index:2;content:""}
+div.timenode .meta:before{width:16px;height:16px;border-radius:8px;background:rgb(186 186 220)}
+div.timenode .meta:after{margin-top:2px;margin-left:2px;width:12px;height:12px;border-radius:6px;background:#5f70f5;transition:all .3s;transform:scale(.5)}
+div.timenode .meta p{margin:0 0 0 24px;font-weight:700}
+div.timenode .body{display:inline-block;margin:4px 0 16px 24px;padding:16px;border-radius:12px}
+div.timenode .body:empty{display:none}
+div.timenode .body>:first-child{margin-top:.25em}
+div.timenode .body>:last-child{margin-bottom:.25em}
+div.timenode .body .highlight{border:1px solid #e4e4e4}
+div.timenode:hover .meta:before{background:rgb(186 186 220)}
+div.timenode:hover .meta:after{background:#2942ff;transform:scale(1)}
+div.timenode a {
+    color: #babadc;
+}

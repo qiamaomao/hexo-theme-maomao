@@ -1,0 +1,16 @@
+<div class="footer_nav">
+        <div class="footer_nav_inner">
+            <ul>
+                <% for (var menu in theme.footer_nav){ %>
+                <li class="item">
+                    <a href="<%- url_for(theme.footer_nav[menu].path) %>">
+                        <img width="22" height="22" src="<%= theme.footer_nav[menu].img %>" alt="<%= menu %>">
+                        <span>
+                            <%= menu %>
+                        </span>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+</div>

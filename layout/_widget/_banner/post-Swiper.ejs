@@ -1,0 +1,23 @@
+  <!-- Swiper -->
+  <div class="swiper-container" style="position: relative">
+    <div class="swiper-wrapper">
+        <% page.banner.forEach(function(banner, i){ %>
+        <div class="lazyload swiper-slide" style="background-image:url(<%= theme.lazy %>)" data-src="<%- url_for(banner) %>"></div>
+        <% }) %>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        spaceBetween: 20,
+      },
+      autoplay: true,
+      loop: true,
+    });
+  </script>

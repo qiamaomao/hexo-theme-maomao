@@ -1,0 +1,32 @@
+  <!-- Swiper -->
+  <div class="swiper-container m shadow-item br-10 mb-20" style="position: relative">
+        <% if (page.ico){ %>
+			<div class="adTag sm-dn"><i data-feather="<%= page.ico %>"></i></div>
+            <% } else if (page.video === 'bv'){ %>
+            <div class="adTag sm-dn"><i data-feather="tv"></i></div>
+            <% } else { %>
+            <% } %>
+        <div class="swiper-wrapper brt-5">
+            <% page.mbanner.forEach(function(mbanner, i){ %>
+            <div class="lazyload swiper-slide brt-5" style="background-image:url(<%= theme.lazy %>)" data-src="<%- url_for(mbanner) %>"></div>
+            <% }) %>
+        </div>
+      </div>
+
+<style>
+.swiper-container.m {
+    height: <% if (page.mbannerh){ %><%= page.mbannerh %> <% } else { %> 275px <% } %>
+}
+@media (max-width:768px){
+.swiper-container.m {
+    height: 165px;
+}}
+</style>
+  <script>
+    var swiper = new Swiper('.swiper-container.m', {
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: true,
+      loop: true,
+    });
+  </script>
