@@ -12,7 +12,7 @@ https://rongbuqiu.com
 图标库：https://feathericons.com
 <br>
 
-![截图](https://p.pstatp.com/origin/pgc-image/371463e70d9b468aba51c1c19f083b57)
+![预览图](cover.png)
 
 ## 可能需要创建的页面
  - links
