@@ -14,6 +14,10 @@ https://rongbuqiu.com
 
 ![预览图](cover.png)
 
+## 需要安装的插件
+```
+npm install --save hexo-wordcount
+```
 ## 可能需要创建的页面
  - links
  - about
