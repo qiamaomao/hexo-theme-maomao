@@ -7,7 +7,6 @@
     <meta name="keywords" content="<% if (page.tags && page.tags.length){ page.tags.forEach(function(tag, i){%> <%=tag.name%> <% if (i+1<page.tags.length){%>,<%} })}%><%= config.title %>">
     <meta name="description" content="<% if (page.description){ %><%= page.description %> | <% } %><%= config.description %>">
     <title><% if (title){ %><%= title %>・<% } %><%= config.title %></title>
-	<link rel="shortcut icon" href="https://p.pstatp.com/origin/ff830003a18df218a672"	title="Favicon">
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//p.pstatp.com">
     <%- css_auto_version('style') %>
